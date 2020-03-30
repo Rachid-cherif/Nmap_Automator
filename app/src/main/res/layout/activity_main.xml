@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp" tools:context=".MainActivity">
+
+    <TextView
+        android:text="@string/nmap_command"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/nmap_text" />
+
+    <EditText
+        android:id="@+id/flags_ET"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/nmap_text"
+        android:layout_centerHorizontal="true" />
+        "
+        android:hint="l'addresse IP" />
+
+
+    <Button
+        android:id="@+id/scan_BT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="161dp"
+        android:layout_toEndOf="@+id/nmap_text"
+        android:text="@string/scan_button" />
+
+    <TextView
+        android:id="@+id/scan_output_TV"
+        android:layout_width="358dp"
+        android:layout_height="308dp"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:maxLines="1000"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/scan_BT"
+        android:layout_marginEnd="86dp"
+        android:text="History"
+       />
+
+    <ImageView
+        android:layout_width="81dp"
+        android:layout_height="46dp"
+        android:layout_alignEnd="@+id/scan_output_TV"
+        android:layout_alignTop="@+id/nmap_text"
+        android:src="@drawable/nmappic"
+        android:id="@+id/doc"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="232dp"
+        android:layout_height="43dp"
+        android:layout_above="@+id/scan_BT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-141dp"
+        android:entries="@array/numbers"/>
+
+</RelativeLayout>

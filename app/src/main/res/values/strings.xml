@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">nmap-android</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="nmap_command">nmap</string>
+    <string name="scan_button">Scan!</string>
+    <string name="scan_command_hint">Enter your flags here...</string>
+    <string-array name="numbers">
+        <item>Scan a single host or an IP address</item>
+        <item>Scan a host when protected by the firewall</item>
+        <item>Scan a network and find out which servers and devices are up and running</item>
+        <item>Display the reason a port is in a particular state</item>
+        <item>Only show open (or possibly open) ports</item>
+        <item>The fastest way to scan all your devices/computers for open ports ever</item>
+        <item>Scan a host using TCP ACK (PA) </item>
+        <item>"guess" the operating system of the target machine.</item>
+
+
+    </string-array>
+</resources>
